@@ -22,6 +22,11 @@ h1.titolo{
 	
 }
 
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+
 .main p{
 	
 	font-family: 'Anek Bangla', sans-serif;
@@ -183,14 +188,141 @@ span.titolo-form{
 	
 }
 
+.password{
+	
+	width: 100%;
+	height: 5%;
+	top: 129%;
+	font-family: 'Anek Bangla'
+	
+}
+
+.numero{
+	
+	width: 100%;
+	height: 5%;
+	top: 137%;
+	font-family: 'Anek Bangla'
+	
+}
+
+.testoseleziona{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	top: 143%;
+	left: 2.8%;
+	font-size: 20px;
+	font-weight: 300;
+	color: black;
+	width: 1000px;
+	
+}
+
+span.uomo{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	top: 148%;
+	font-weight: 400;
+	left: 2.8%;
+	
+}
+
+input.radiom{
+	
+	position: absolute;
+	top: 149.2%;
+	left: 4.2%;
+	background-color: crimson;
+	height: auto;
+	width: auto;
+}
+
+span.donna{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	top: 148%;
+	font-weight: 400;
+	left: 7.8%;
+	
+}
+
+input.radiof{
+	
+	position: absolute;
+	top: 149.2%;
+	left: 9%;
+	width: auto;
+	height: auto;
+	background-color: crimson;
+	
+}
+
+.titolomotivo{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	top: 153%;
+	font-size: 20px;
+	font-weight: 300;
+	left: 2.8%;
+	
+}
+
+.select{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	width: 15%;
+	height: 5%;
+	top: 158%;
+	font-size: 20px;
+	font-weight: 300;
+	left: 2.8%;
+	
+}
+
 .testo{
 	
 	width: 40%;
 	height: 30%;
-	top: 130%;
+	top: 167%;
 	box-sizing: border-box;
 	resize: none;
 	font-family: 'Anek Bangla';
+}
+
+.testocheckbox{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	top: 198%;
+	font-size: 15px;
+	font-weight: 500;
+	left: 4.3%;
+	font-style: italic;
+	color: red;
+	
+}
+
+.checkbox{
+	
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 199.1%;
+	left: -13% !important;
+	
 }
 
 .invia{
@@ -198,7 +330,7 @@ span.titolo-form{
 	font-family: 'Anek Bangla', sans-serif;
 	width: 8% !important;
 	height: auto;
-	top: 163%;
+	top: 205%;
 	background-color: red;
 	color: white
 	
@@ -209,7 +341,7 @@ span.titolo-form{
 	font-family: 'Anek Bangla', sans-serif;
 	width: 8% !important;
 	height: auto;
-	top: 163%;
+	top: 205%;
 	left: 12% !important;
 	background-color: red;
 	color: white;
@@ -224,9 +356,38 @@ span.titolo-form{
 	
 }
 
+
+
 .invisibile{
 	
 	position: absolute;
-	top:175%;
+	top:210%;
+	
+}
+#sopra{
+	
+	position: absolute;
+	top: 80%;
+	
+}
+
+.bottone-sopra a,.bottone-sopra button{
+	
+	position: absolute;
+	font-family: 'Anek Bangla', sans-serif !important;
+	width: 10% !important;
+	height: 3.9%;
+	top: 205%;
+	left: 21% !important;
+	background-color: red;
+	color: white;
+	border-color: crimson;
+	border-radius: 4px;
+	color: white;
+}
+
+.bottone-sopra a:hover{
+	
+	background-color: crimson;
 	
 }
