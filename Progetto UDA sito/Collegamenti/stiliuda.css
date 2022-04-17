@@ -1,0 +1,109 @@
+
+*{
+	
+	overflow-y: visible;
+	
+}
+
+.testocompleto{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	
+}
+
+h1.titolo{
+	
+	position: absolute;
+	font-size: 70px;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	color: black;
+	top: 35%;
+	left: 50%;
+	padding-top: 50px;
+	padding-left: 30px;
+	
+}
+
+.sottotitolo{
+	
+	position: absolute;
+	top: 70%;
+	left: 15%;
+	font-size: 40px;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	font-weight: 200;
+	color: black;
+	width:1200px;
+	
+}
+
+.paragrafi{
+	
+	border-top: 1px solid lightgrey;
+	margin: 280px;
+	margin-bottom: 0;
+	padding-top: 20px;
+	font-size: 20px;
+;
+}
+
+.proptitoloparagrafo{
+	
+	position: absolute;
+	font-size: 30px;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	font-weight: 500;
+	color: black;
+	width:1200px;
+	padding-top: 20px;
+	
+}
+
+.paragrafo2{
+	
+	position: relative;
+	padding-top: 70px;
+	
+}
+
+.titoloparagrafo2{
+	
+	position:relative;
+	
+}
+
+.paragrafo3{
+	
+	position: relative;
+	padding-top: 90px;
+	
+}
+
+.paragrafo4{
+	
+	position: relative;
+	padding-top: 90px;
+	
+}
+
+a.linkfonti{
+	
+	text-decoration: none;
+	color: black;
+	
+}
+
+div.fonti{
+	
+	background-color: rgb(100,100,100);
+	color: white;
+	border-radius: 10px;
+	display: block;
+	position: relative;
+	left: 25%;
+	margin:40px;
+	width:680px;
+	text-align:center;
+	align-items: center;
+	
+}

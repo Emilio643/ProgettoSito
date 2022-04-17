@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stili_index.css">
+		<link rel = "stylesheet" type = "text/css" href = "programma3stili.css">
+		<title>Programmi in C</title>
+	
+	</head>
+
+	<body>
+	
+		<div class = "menu">
+		
+			<span class = "simboli">< > </span><span class = "ep">Emilio Pinto</span>
+			<a href = "contatti.html">Contatti</a>
+			<a href = "info.html">Info</a>	
+			<div class = "menu-cascata">
+		
+				<button class = "bottone" href = "#">
+					Progetti
+				</button>
+				
+				<div class = "links">
+			
+					<a href = "programmic.html">Programmi in C</a>
+					<a href = "uda.html">UDA</a>
+			
+				</div>
+		</div>
+			<a href = "index.html">Home</a>
+		</div>
+		
+		<img src = ".\Risorse\Immagini e Video\programmazionec3.jpg" alt = "programmazione" class = "immagine">
+		
+		<div class = "testo">
+		
+			<div class = "top">
+			
+				<h1 class = "titolo">Eliminazione indice di un'array</h1>
+				
+			</div>
+			
+			<div class = "paragrafi">
+			
+			<p class = "introduzione" style = "border-top: 1px solid lightgrey; margin-top: 0px;"><span style = "font-weight: bold;"><br><br>Questo programma elimina un indice scelto dall'utente da un'array.</span><br>Prima di cominciare vediamo come funziona l'algoritmo. Semplicemente una volta ottenuto dall'utente l'indice eliminato tramite l'utilizzo di un ciclo <span class = "funzione" style = "color: blue;">for</span>, non facciamo altro che sostituire i numeri a partire da quell'indice con il numero affianco. Questa operazione viene ripetuta per n-1 volte dove "n" &egrave; la grandezza dell'array.</p>
+			<p class = "paragrafo1">Cominciamo col dichiarare la grandezza dell'array e l'indice eliminato. Acquisiamo poi i valori che conterrà l'array e l'indice che verrà eliminato da esso.</p>
+			<p class = "codice1">
+			
+				&nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">,</span> indice_eliminato<span style = "color: #fffc95;">;</span><br><br>
+	
+				&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci grandezza array: "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &n<span style = "color: #fffc95;">);</span><br><br>
+	
+				&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">];</span><br><br>
+	
+				&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci %d numeri:\n"</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+		
+				&nbsp;}</span><br><br>
+	
+				&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Quale indice vuoi eliminare? "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;indice_eliminato<span style = "color: #fffc95;">);</span><br>
+			
+			</p>
+			<p class = "paragrafo2">Per comodità stampiamo l'array con gli indici ancora non "manomessi".</p>
+			<p class = "codice2">
+			
+				&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Array con indice ancora intatto: "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+		
+				&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]);<br><br>
+		
+				&nbsp;}</span><br>
+			
+			</p>
+			<p class = "paragrafo3">Adesso applichiamo l'algoritmo descritto precedentemente. Con un ciclo <span class = "funzione" style = "color: blue;">for</span> in cui abbiamo dichiarato una variabile "c" che contiente l'indice da eliminare, settiamo il ciclo in modo che ripeta le istruzioni al suo interno finché "c" è minore di n-1, dove "n" è la grandezza dell'array. Poi sostituiamo il valore dell'indice "c" con il numero affianco. Facendo così abbiamo spostato tutti i numeri a partire dall'indice eliminato di una posizione, e l'indice da eliminare è stato sovrascritto da quello successivo.</p>
+			<p class = "codice3">
+			
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;"><span style = "color: blue;">int</span></span> c <span style = "color: #fffc95;">=</span> indice_eliminato<span style = "color: #fffc95;">;</span> c <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">;</span> c<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>c<span style = "color: #fffc95;">] =</span> array<span style = "color: #fffc95;">[</span>c<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">];<br><br>
+		
+				&nbsp;}</span><br>
+			
+			</p>
+			<p class = "paragrafo4">Adesso non ci resta che stampare il nuovo vettore ottenuto.</p>
+			<p class = "codice4">
+				&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Array con indice eliminato: "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]);<br><br>
+		
+				&nbsp;}</span><br>
+			</p>
+			<p class = "paragrafo5">Codice completo:</p>
+			<p class = "codice-completo">
+			
+				&nbsp;<span style = "color: #d8b3e8;">#include &#60;stdio.h&#62;</span><br><br>
+
+				&nbsp;<span style = "color: blue;">int</span> main<span style = "color: #fffc95;">(){</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">,</span> indice_eliminato<span style = "color: #fffc95;">;</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci grandezza array: "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;n<span style = "color: #fffc95;">);</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">];</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci %d numeri:\n</span>"<span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+			
+					&nbsp;&nbsp;}</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Quale indice vuoi eliminare? "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;indice_eliminato<span style = "color: #fffc95;">);</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Array con indice ancora intatto: "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]);<br><br>
+			
+					&nbsp;&nbsp;}</span><br>
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"\n\n"</span><span style = "color: #fffc95;">);</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> c <span style = "color: #fffc95;">=</span> indice_eliminato<span style = "color: #fffc95;">;</span> c <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">; </span>c<span style = "color: #fffc95;">++){</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>c<span style = "color: #fffc95;">] =</span> array<span style = "color: #fffc95;">[</span>c<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">];<br><br>
+			
+					&nbsp;&nbsp;}</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Array con indice eliminato: "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]);<br><br>
+			
+					&nbsp;&nbsp;}<br><br>
+	
+				&nbsp;}</span><br>
+			
+			</p>
+			<p class = "paragrafo-invisibile"> &nbsp; </p>
+			
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

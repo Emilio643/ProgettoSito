@@ -1,0 +1,226 @@
+*{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+}
+
+.menu{
+	
+	width: 100%;
+	background-color: #EF233C;
+	overflow: visible;
+	position: fixed;
+	font-family: 'Anek Bangla', sans-serif;
+	z-index: 50;
+	
+}
+
+/*logo*/
+.menu span{
+	
+    -webkit-user-select: none; /*serve per non rendre il logo selezionabile come testo tutti e 4 per vari browser*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+	font-size: 30px ;
+	float: left;
+	padding: 10px;
+	
+}
+
+.menu span.simboli{
+	
+	color: #2B2D42;
+	font-weight: bold;
+	
+}
+
+.menu span.ep{
+	
+	color: #EDF2F4;
+	font-weight: italic;
+	
+}
+/*logo*/
+
+.menu a{
+	
+	float: right;
+	color: #EDF2F4;
+	text-align: center;
+	padding: 10px 50px;/**/
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 200;
+	
+}
+
+.menu-cascata{
+	
+	float: right;
+	overflow: visible;
+	
+}
+
+.menu-cascata .bottone{
+	
+	font-size: 30px;
+	border: none;
+	outline: none;
+	color: #EDF2F4;
+	padding: 10px 50px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	font-weight: 200;
+	
+}
+
+.menu a:hover, .menu-cascata:hover .bottone{
+	
+	background-color: #D80032;
+	
+}
+
+.menu a:active{
+	
+	background-color: lightgrey;
+	
+}
+
+.links{
+	
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+}
+
+.links a{
+	
+	float: none;
+	color: #EDF2F4;
+	padding: 10px 50px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	
+}
+
+.links a:hover{
+	
+	background-color: lightgrey;
+	
+}
+
+.menu-cascata:hover .links{
+	
+	display: block;
+	
+}
+/*fine menu*/
+
+.video{
+	
+	position: relative;
+	margin: 0;
+	z-index: -100;
+	opacity: 95%;
+	right: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	padding: 0px;
+	
+}
+
+div.testo{
+	
+	font-family: 'Quicksand', sans-serif;
+	
+}
+
+.titolo{
+	
+	z-index: 30;
+	font-size: 90px;
+	font-weight: 400;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 40%;
+	left: 50%;
+	color: lightgrey;
+	margin: -250px 0 0 -250px;
+	font-style: italic;
+	
+}
+
+.sottotitolo{
+	
+	z-index: 30;
+	font-size: 40px;
+	font-weight: 100;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	top: 75%;
+	left: 32%;
+	width: 634px;
+	height: 110px;
+	margin: -317px 0 0  -50px;
+	color: lightgrey;
+	position: absolute;
+	
+}
+
+.sottotitolo2{
+	
+	z-index: 30;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 1.8px 1.8px rgba(200,200,200,0.2);
+	top: 90%;
+	left: 31%;
+	width: 700px;
+	height: 100px;
+	margin: -317px 0 0  -50px;
+	color: lightgrey;
+	position: absolute;
+	
+}
+
+button.progetti{
+	
+	text-decoration: none;
+	font-family: 'Tw Cen MT';
+	font-size: 25px;
+	color: white;
+	border-radius: 20px;
+	background-color: #212b70;
+	border-color: rgba(0,0,0,0);
+	padding: 0px 13px;
+	top: -6%;
+	margin: 5px;
+	position: relative;
+	
+}
+
+.linkprogetti{
+	
+	text-decoration: none;
+	color: white;
+	
+}
+
+button.progetti:active, a.linkprogetti:active{
+	
+	color: #212b70;
+	background-color: white;
+	
+}
+

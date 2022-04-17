@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stili_index.css">
+		<link rel = "stylesheet" type = "text/css" href = "stiliprogramma2.css">
+		<title>Programmi in C</title>
+	
+	</head>
+
+	<body>
+	
+		<div class = "menu">
+		
+			<span class = "simboli">< > </span><span class = "ep">Emilio Pinto</span>
+			<a href = "contatti.html">Contatti</a>
+			<a href = "info.html">Info</a>	
+			<div class = "menu-cascata">
+		
+				<button class = "bottone" href = "#">
+					Progetti
+				</button>
+				
+				<div class = "links">
+			
+					<a href = "programmic.html">Programmi in C</a>
+					<a href = "uda.html">UDA</a>
+			
+				</div>
+		</div>
+			<a href = "index.html">Home</a>
+		</div>
+		
+		<img src = ".\Risorse\Immagini e Video\programmazionec2.jpg" alt = "programmazione" class = "immagine">
+		
+		<h1 class = "titolo">Ordinazione di un array con Bubble Sort</h1>
+		
+		<div class = "paragrafi">
+		
+			<p class = "introduzione" style = "border-top: 1px solid lightgrey;">
+			
+				<strong><br><br>Questo programma ordina il contenuto di un'array con dimensione acquisita da tastiera secondo l'algoritmo del Bubble Sort.</strong><br> <br>
+				Ma prima di cominciare vediamo un po' come funziona il Bubble Sort.
+				<br>Secondo <a href = "https://it.wikipedia.org/wiki/Bubble_sort" target = "_blank" class = "linkfonte"><strong>Wikipedia</strong></a>:<br> <em><span style = "background-color: #fffa91; font-weight: 300;">"In informatica il Bubble sort o ordinamento a bolla è un semplice algoritmo di ordinamento di liste di dati. In esso l'insieme di dati viene scansionato,
+				ogni coppia di elementi adiacenti viene comparata ed i due elementi vengono invertiti di posizione se sono nell'ordine sbagliato.
+				L'algoritmo continua nuovamente a ri-eseguire questi passaggi su tutta la lista fino a quando non vengono più eseguiti scambi, situazione che indica che la lista è ordinata".</span></em><br><br>
+				Bene dopo aver visto la teoria passiamo alla pratica.<br><br>
+		
+			</p>
+			<p class = "paragrafo1">
+			
+				Per prima cosa dichiariamo una variabile che contierrà la grandezza dell'array e acquisiamone il valore tramite <span class = "funzione" style = "color: red;">scanf()</span>.
+				Una volta fatto ciò creiamo il vettore e tramite un ciclo <span class = "funzione" style = "color: blue;">for</span> acquisiamo i numeri che conterrà l'array.
+			
+			
+			</p>
+			<p class = "codice1" style = "font-family: consolas; color: white;">
+			
+				&nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">,</span> temp<span style = "color: #fffc95;">;</span><br><br>
+	
+				&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci la grandezza dell array: "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span>, &amp;<span style = "color: #fffc95;">);</span><br><br>
+		
+				&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">];</span><br><br>
+	
+				&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci i numeri dell array\n"</span><span style = "color: #fffc95;">);</span><br><br>
+	
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+		
+				&nbsp;}</span>
+			
+			</p>
+			<p class = "paragrafo2">
+			
+				Adesso mettiamo in pratica quello che abbiamo imparato dalla teoria.
+				Sappiamo che il Bubble Sort va verificare ogni numero singolarmente se è minore del numero affianco.
+				Viene naturale da pensare che avremo bisgono di due cicli innestati in modo che ogni numero possa essere verificato con quello che lo affianca
+				e ripetere questa operazione per il numero della grandezza dell'array.
+				In precedenzza è stata dichiarata una variabile di nome "temp", la utilizzeremo per scambiare i numeri nel vettore.
+				<br>In pratica sarebbe:<br>
+			
+			</p>
+			<p class = "codice2" style = "font-family: consolas; color: white;">
+			
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]</span> <span style = "color: #fffc95;">&#62;</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">]){</span><br><br>
+				
+							&nbsp;&nbsp;&nbsp;&nbsp;temp <span style = "color: #fffc95;">=</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">];</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]</span> <span style = "color: #fffc95;">=</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">];</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">]</span> <span style = "color: #fffc95;">=</span> temp<span style = "color: #fffc95;">;<br><br>
+				
+						&nbsp;&nbsp;&nbsp;}<br><br>
+			
+					&nbsp;&nbsp;}<br><br>
+		
+				&nbsp;}</span>
+			
+			</p>
+			<p class = "paragrafo3">
+			
+				Infine con il ciclo <span class = "funzione" style = "color: blue;">for</span> stampiamo il contenuto del vettore.
+			</p>
+			<p class = "codice3" style = "font-family: consolas; color: white;">
+			
+				&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"L'array ordinato e: "</span><span style = "color: #fffc95;">);</span><br>
+				&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+		
+				&nbsp;}</span>
+			
+			</p>
+			<p class = "paragrafo4">Il codice completo:</p>
+			<p class = "codice4" style = "font-family: consolas; color: white; padding-bottom: 40px;">
+			
+				&nbsp;<span style = "color: #d8b3e8;">#include &#60;stdio.h&#62;</span><br><br>
+
+				&nbsp;<span style = "color: blue;">int</span> main<span style = "color: #fffc95;">(){</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">,</span> temp<span style = "color: #fffc95;">;</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci la grandezza dell array: "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;n<span style = "color: #fffc95;">);</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">];</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Inserisci i numeri dell array\n"</span><span style = "color: #fffc95;">);</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+						&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+		
+					&nbsp;&nbsp;}</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">-</span>1<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+			
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">]</span> <span style = "color: #fffc95;">&#62;</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">]){</span><br><br>
+				
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp <span style = "color: #fffc95;">=</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">];</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">] =</span> array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">];</span><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">+</span>1<span style = "color: #fffc95;">] =</span> temp<span style = "color: #fffc95;">;<br><br>
+				
+							&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+			
+						&nbsp;&nbsp;&nbsp;}<br><br>
+		
+					&nbsp;&nbsp;}</span><br><br>
+	
+					&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"L'array ordinato e: "</span><span style = "color: #fffc95;">);</span><br>
+					&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+						&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d "</span><span style = "color: #fffc95;">,</span> array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">]);<br><br>
+		
+					&nbsp;&nbsp;&nbsp;}<br><br>
+	
+				&nbsp;&nbsp;}</span>
+			
+			</p>
+			
+			<p class = "paragrafo-invisibile">&nbsp;</p>
+		
+		</div>
+		
+	</body>
+</html>

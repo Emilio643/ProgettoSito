@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	
+}
+
+.menu{
+	
+	width: 100%;
+	background-color: #EF233C;
+	overflow: visible;
+	position: fixed;
+	font-family: 'Anek Bangla', sans-serif;
+	z-index: 50;
+	
+}
+
+/*logo*/
+.menu span{
+	
+    -webkit-user-select: none; /*serve per non rendre il logo selezionabile come testo tutti e 4 per vari browser*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+	font-size: 30px ;
+	float: left;
+	padding: 10px;
+	
+}
+
+.menu span.simboli{
+	
+	color: #2B2D42;
+	font-weight: bold;
+	
+}
+
+.menu span.ep{
+	
+	color: #EDF2F4;
+	font-weight: italic;
+	
+}
+
+.menu a{
+	
+	float: right;
+	color: #EDF2F4;
+	text-align: center;
+	padding: 10px 50px;/**/
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 200;
+	
+}
+
+.menu-cascata{
+	
+	float: right;
+	overflow: visible;
+	
+}
+
+.menu-cascata .bottone{
+	
+	font-size: 30px;
+	border: none;
+	outline: none;
+	color: #EDF2F4;
+	padding: 10px 50px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	font-weight: 200;
+	
+}
+
+.menu a:hover, .menu-cascata:hover .bottone{
+	
+	background-color: #D80032;
+	
+}
+
+.menu a:active{
+	
+	background-color: lightgrey;
+	
+}
+
+.links{
+	
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+}
+
+.links a{
+	
+	float: none;
+	color: #EDF2F4;
+	padding: 10px 50px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	
+}
+
+.links a:hover{
+	
+	background-color: lightgrey;
+	
+}
+
+.menu-cascata:hover .links{
+	
+	display: block;
+	
+}
+/*fine menu*/
+
+div.principale{
+	
+	text-decoration: none;
+	font-family: 'Anek Bangla', sans-serif;
+	width: 1920;
+	height: 1080;
+	
+}
+
+h1.titoloprogrammi{
+	
+	position: absolute;
+	align-items: center;
+	top: 12%;
+	left: 33%;
+	font-size: 80px;
+	text-shadow: 2px 2px rgba(200,200,200,0.4);
+	font-weight: 200;
+	color: black;
+	width: 700px;
+	margin: 0;
+	
+}
+
+
+.ombra{
+	
+	z-index: 0;
+	position: absolute;
+	top: 39%;
+	left: 5.5%;
+	width: 385px;
+	height: 395px;
+	background-color: rgba(0,0,0,0.05);
+	
+}
+
+.imgprogramma1{
+	
+	z-index: 0;
+	position: absolute;
+	width: 25%;
+	height: auto;
+	top: 40%;
+	left: 5%;
+	
+	
+}
+
+div.background{
+	
+	overflow-y: hidden;
+	font-family: 'Anek Bangla', sans-serif;
+	font-size: 19px;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(194,41,41);
+	width: 22.4%;
+	height: 20%;
+	top: 70%;
+	left: 5%;
+	padding: 20px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	
+}
+
+a.freccia{
+	
+	color: white;
+	
+}
+
+a.freccia:hover{
+	
+	color: black;
+	
+}
+
+.ombra2{
+	
+	z-index: 0;
+	position: absolute;
+	top: 39%;
+	left: 38%;
+	width: 385px;
+	height: 395px;
+	background-color: rgba(0,0,0,0.05);
+	
+}
+
+.imgprogramma2{
+	
+	z-index: 0;
+	position: absolute;
+	width: 24.85%;
+	height: 215px;
+	top: 40%;
+	left: 37.5%;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	
+	
+}
+
+div.background2{
+	
+	overflow-y: hidden;
+	font-family: 'Anek Bangla', sans-serif;
+	font-size: 19px;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(194,41,41);
+	width: 22.4%;
+	height: 20%;
+	top: 70%;
+	left: 37.5%;
+	padding: 20px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	
+}
+
+.ombra3{
+	
+	z-index: 0;
+	position: absolute;
+	top: 39%;
+	left: 70.5%;
+	width: 385px;
+	height: 395px;
+	background-color: rgba(0,0,0,0.05);
+	
+}
+
+.imgprogramma3{
+	
+	z-index: 0;
+	position: absolute;
+	width: 25%;
+	height: 268px;
+	top: 40%;
+	left: 70%;
+	
+	
+}
+
+div.background3{
+	
+	overflow-y: hidden;
+	font-family: 'Anek Bangla', sans-serif;
+	font-size: 19px;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(194,41,41);
+	width: 22.4%;
+	height: 20%;
+	top: 70%;
+	left: 70%;
+	padding: 20px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	
+}

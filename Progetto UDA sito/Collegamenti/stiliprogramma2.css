@@ -1,0 +1,165 @@
+*{
+	
+	overflow-y: visible;
+	
+}
+
+.immagine{
+	
+	position: absolute;
+	top: -20%;
+	left: 5%;
+	width: 100%;
+	filter: blur(2.5px);
+	
+}
+
+.titolo{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	top: 12%;
+	left: 17.5%;
+	font-size: 80px;
+	text-shadow: 2px 2px rgba(200,200,200,0.4);
+	font-weight: 300;
+	color: black;
+	width: 1000px;
+	height: 300px;
+	margin: 0;
+	
+}
+	
+.funzione{
+	
+	border-radius: 3px;
+	background: rgba(200,200,200,0.4);
+	font-size: 18px;
+	font-weight: bold;
+	color: crimson;
+	
+}
+
+.paragrafi p{
+	
+	font-family: 'Anek Bangla', sans-serif;
+	color: black;
+	width: 1000px;
+	height: auto;
+	margin-left: 280px;
+	font-size: 20px;
+	font-weight: 200;
+	
+}
+
+.introduzione{
+	
+	position: absolute;
+	top: 80%;
+	left: 0%;	
+
+}
+
+.linkfonte{
+	
+	text-decoration: none;
+	
+}
+
+.paragrafo1{
+	
+	position: absolute;
+	top: 150%;
+	left: 0%;	
+
+}
+
+.codice1{
+	
+	font-size: 17px !important;
+	position: absolute;
+	border: 1px solid grey;
+	border-radius: 8px;
+	width: 700px;
+	background: rgb(41,49,52);
+	top: 162%;
+	left: 0;
+	border-left: 5px solid crimson;
+	
+}
+
+.paragrafo2{
+	
+	position: absolute;
+	top: 210%;
+	left: 0%;	
+
+}
+
+.codice2{
+	
+	font-size: 17px !important;
+	position: absolute;
+	border: 1px solid grey;
+	border-radius: 8px;
+	width: 700px;
+	background: rgb(41,49,52);
+	top: 243%;
+	left: 0;
+	border-left: 5px solid crimson;
+	
+}
+
+.paragrafo3{
+	
+	position: absolute;
+	top: 295%;
+	left: 0%;	
+
+}
+
+.codice3{
+	
+	font-size: 17px !important;
+	position: absolute;
+	border: 1px solid grey;
+	border-radius: 8px;
+	width: 700px;
+	background: rgb(41,49,52);
+	top: 300%;
+	left: 0;
+	border-left: 5px solid crimson;
+	
+}
+
+.paragrafo4{
+	
+	position: absolute;
+	top: 328%;
+	left: 0%;	
+
+}
+
+.codice4{
+	
+	font-size: 17px !important;
+	position: absolute;
+	border: 1px solid grey;
+	border-radius: 8px;
+	width: 700px;
+	background: rgb(41,49,52);
+	top: 333%;
+	left: 0;
+	border-left: 5px solid crimson;
+	
+}
+
+.paragrafo-invisibile{
+	
+	position: absolute;
+	top: 480%;
+	left: 0%;	
+
+}

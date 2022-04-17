@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stili_index.css">
+		<link rel = "stylesheet" type = "text/css" href = "stiliprogramma1.css">
+		<title>Programmi in C</title>
+	
+	</head>
+
+	<body>
+	
+		<div class = "menu">
+		
+			<span class = "simboli">< > </span><span class = "ep">Emilio Pinto</span>
+			<a href = "contatti.html">Contatti</a>
+			<a href = "info.html">Info</a>	
+			<div class = "menu-cascata">
+		
+				<button class = "bottone" href = "#">
+					Progetti
+				</button>
+				
+				<div class = "links">
+			
+					<a href = "programmic.html">Programmi in C</a>
+					<a href = "uda.html">UDA</a>
+			
+				</div>
+		</div>
+			<a href = "index.html">Home</a>
+		</div>
+		
+		<div class = "testocompleto">
+		
+			<div>
+			
+				<h1 class = "titolo">Quante volte un numero si ripete in un 'array</h1>
+				<img src=".\Risorse\Immagini e Video\programmazionec.jpg" alt = "programmazione" class = "immagine-programma">
+			
+			</div>
+					
+			<div class = "spazioparagrafi" style = "height: 2600px; overflow: hidden; overflow-block: scroll;">
+			
+				<p class = "paragrafi" style = "margin:0px 280px 0px 280px;"><br>
+					Cominciamo col dichiarare la dimensione dell’array e tramite la funzione <span class = "funzione">scanf()</span> acquisiamo il valore.<br><br></p>
+				<p class = "codice1" style = "color: #f9f9f9; margin-bottom: 40px;">
+					
+					    &nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">;</span><br>
+	
+					    &nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;"><span style = "color: #fffc95;">(</span></span></span><span style = "color: orange;">"Quanti numeri devo controllare? --> "</span><span style = "color: #fffc95;">)</span><span style = "color: #fffc95;">;</span><br>
+					    &nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;n<span style = "color: #fffc95;">);</span>
+						
+				</p>
+				<p class = "paragrafi" style = "position: absolute; top: 5.1%;"><br>Adesso creiamo due array (uno sarà la copia dell’altro), e una variabile che conterà quanti numeri si ripetono.</p>
+				<p class = "codice2" style = "color: white;">&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">],</span> arraycopia<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">],</span> check<span style = "color: #fffc95;">;</span></p>
+				<p class = "paragrafi" style = "position: absolute; top: 7.5%;"><br><br>Con un ciclo <span class = "funzione" style = "color: blue;">for</span> acquisiamo i valori del vettore.</p>
+				<p class = "codice3" style = "color: white;">
+				
+					&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Iserisci %d numeri:\n"</span><span style = "color: #fffc95;">,</span> n<span style = "color: #fffc95;">);</span><br>
+					&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> b <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> b <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> b<span style = "color: #fffc95;">++){</span><br><br>
+		
+					&nbsp;<span style = "color: #98263c;"> scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &amp;array<span style = "color: #fffc95;">[</span>b<span style = "color: #fffc95;">]);<br><br>
+		
+					&nbsp;}</span>
+
+				
+				</p>
+				<p class = "paragrafi" style = "position: absolute; top: 18%;">
+				
+					Con un altro ciclo <span class = "funzione" style = "color: blue;">for</span> settato per eseguire le istruzioni al suo interno finché “i” è minore di “n”,
+					copiamo<br> il contenuto dell’array in un altro vettore. 
+					<br><span style = "background-color: #fffa91;"><strong>N.B.</strong> <em>Questo passaggio è facoltativo, poiché la lettera dei numeri ripetuti nell’array<br>
+					può essere fatta anche confrontando l’array stesso evitando così l’utilizzo di una copia.</em></span>
+				
+				</p>
+				
+				<p class = "codice4" style = "color: white;">
+				
+					&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+						&nbsp; arraycopia<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">] =</span> array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">];<br><br>
+		
+					&nbsp;}</span>
+				
+				</p>
+				
+				<p class = "paragrafi" style = "position: absolute; top: 29.7%;">
+				
+						Adesso andiamo ad effettuare finalmente la lettura dell’array.
+						Creiamo due cicli innestati uno per scorrere l’indice<br> del primo array, l’altro per scorrere l’indice dell’array copia.
+						Tramite <span class = "funzione" style = "color: blue;">if</span> verifichiamo se il numero di indice “a” <br>dell’array è uguale al numero di indice “b” dell’array copia, se la condizione è vera, “check” viene incrementato di 1 unità.
+						<br>Viene poi effettuata un'altra verifica, se stiamo verificando lo stesso indice il valore di “check” che si sarà dovuto <br>incrementare per forza verrà annullato visto che è andato a verificare un numero uguale.
+
+				
+				</p>
+				
+				<p class = "codice5" style = "color: white;">
+				
+					  &nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+		
+						&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> b <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> b <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> b<span style = "color: #fffc95;">++){</span><br><br>
+			
+							&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>array[a] <span style = "color: #fffc95;">==</span> arraycopia<span style = "color: #fffc95;">[</span>b<span style = "color: #fffc95;">]){</span><br><br>
+				
+								&nbsp;&nbsp;&nbsp;&nbsp;check<span style = "color: #fffc95;">++;<br><br>
+				
+						&nbsp;&nbsp;}</span><br><br>
+			
+							&nbsp;&nbsp;&nbsp;<span style = "color: #d1d1d1;">//se stiamo verificando lo stesso indice annulliamo la conta di prima</span><br>	
+							&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>a <span style = "color: #fffc95;">==</span> b<span style = "color: #fffc95;">){</span><br><br>
+				
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check<span style = "color: #fffc95;">--;<br><br>
+				
+							&nbsp;&nbsp;&nbsp;}<br>
+		
+						&nbsp;&nbsp;}<br>
+		
+					&nbsp;}</span>
+
+				
+				</p>
+				
+				<p class = "paragrafi" style = "position: absolute; top: 52%;">
+				
+					Infine stampiamo il valore della variabile check che conterrà il numero di elementi duplicati.
+				
+				</p>
+				
+				<p class = "codice6" style = "color: white;">
+				
+					&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Il numero di elementi duplicati e: %d"</span><span style = "color: #fffc95;">,</span> check<span style = "color: #fffc95;">);</span>
+				
+				</p>
+				
+				<p class = "paragrafi" style = "position: absolute; top: 56%;">
+				
+					Codice Completo:
+					
+				</p>
+				
+				<p class = "codicecompleto" style = "color: white";>
+				
+					&nbsp;<span style = "color: #d8b3e8;">#include &#60;stdio.h&#62</span><br><br>
+
+					&nbsp;<span style = "color: blue;">int</span> main<span style = "color: #fffc95;">(){</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">int</span> n<span style = "color: #fffc95;">;</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Quanti numeri devo controllare? --> "</span><span style = "color: #fffc95;">);</span><br>
+						&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &#38;n<span style = "color: #fffc95;">);</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">int</span> array<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">]</span>, arraycopia<span style = "color: #fffc95;">[</span>n<span style = "color: #fffc95;">],</span> check<span style = "color: #fffc95;">;</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Iserisci %d numeri:\n"</span><span style = "color: #fffc95;">,</span> n<span style = "color: #fffc95;">);</span><br>
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> b <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> b <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> b<span style = "color: #fffc95;">++){</span><br><br>
+		
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: #98263c;">scanf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"%d"</span><span style = "color: #fffc95;">,</span> &#38;array<span style = "color: #fffc95;">[</span>b<span style = "color: #fffc95;">]);<br><br>
+		
+						&nbsp;&nbsp;&nbsp;}</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: #d1d1d1;">//********copia array*********</span>	<br>
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> i <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> i <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> i<span style = "color: #fffc95;">++){</span><br><br>
+		
+							&nbsp;&nbsp;&nbsp;&nbsp;arraycopia<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">] =</span> array<span style = "color: #fffc95;">[</span>i<span style = "color: #fffc95;">];<br><br>
+		
+						&nbsp;&nbsp;&nbsp;}</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: #d1d1d1;">//verifico gli elementi duplicati confrontando i due array</span><br><br>
+	
+						&nbsp;&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> a <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> a <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> a<span style = "color: #fffc95;">++){</span><br><br>
+		
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: blue;">for</span><span style = "color: #fffc95;">(</span><span style = "color: blue;">int</span> b <span style = "color: #fffc95;">=</span> 0<span style = "color: #fffc95;">;</span> b <span style = "color: #fffc95;">&#60;</span> n<span style = "color: #fffc95;">;</span> b<span style = "color: #fffc95;">++){</span><br><br>
+			
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>array<span style = "color: #fffc95;">[</span>a<span style = "color: #fffc95;">] ==</span> arraycopia<span style = "color: #fffc95;">[</span>b<span style = "color: #fffc95;">]){</span><br><br>
+				
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check<span style = "color: #fffc95;">++;<br><br>
+				
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br><br>
+			
+						&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: #d1d1d1;">// se stiamo verificando lo stesso indice annulliamo la conta di prima</span><br>	
+								&nbsp;&nbsp;&nbsp;&nbsp;<span style = "color: blue;">if</span><span style = "color: #fffc95;">(</span>a <span style = "color: #fffc95;">==</span> b<span style = "color: #fffc95;">){</span><br><br>
+				
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check<span style = "color: #fffc95;">--;<br><br>
+				
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+		
+							&nbsp;&nbsp;&nbsp;}<br><br>
+		
+						&nbsp;&nbsp;}</span><br><br>
+	
+						&nbsp;<span style = "color: #98263c;">printf</span><span style = "color: #fffc95;">(</span><span style = "color: orange;">"Il numero di elementi duplicati e: %d"</span><span style = "color: #fffc95;">,</span> check<span style = "color: #fffc95;">/</span>2<span style = "color: #fffc95;">);<br><br>
+	
+					&nbsp;}</span>
+
+				
+				</p>
+			
+			</div>
+		
+		</div>
+	</body>
+</html>
