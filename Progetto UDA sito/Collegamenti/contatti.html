@@ -55,7 +55,7 @@
 			<p class = "instagram">Instagram: <span style = "font-weight: 300;"><a href = "https://www.instagram.com/emilio_pinto22/" target = "_blank">@emilio_pinto22</span></a></p>
 			<p class = "tiktok">Tiktok: <span style = "font-weight: 300;"><a href = "https://www.tiktok.com/@emiliop136" target = "_blank">@emiliop136</span></a></p>
 			
-			
+			<a id = "sopra"></a>
 			<span class = "titolo-form">Puoi anche conttatarmi compilando questo modulo:<br></span>
 			<form action = "#" method = "POST" class = "form">
 				
@@ -63,10 +63,27 @@
 				<input type = "text" name = "nome" placeholder = "Nome*" required class = "nome"><br>
 				<input type = "text" name = "cognome" placeholder = "Cognome*" required class = "cognome"><br>
 				<input type = "email" name = "email" placeholder = "Inserisci la tua mail*" required class = "email"><br>
+				<input type = "password" name = "pawssord" placeholder = "Inserisci la tua password*" required class = "password"><br>
+				<input type = "number" name = "numero" placeholder = "Inserisci il tuo numero di telefono*" required min = "0" max = "9999999999" class = "numero"><br>
+				<span class = "testoseleziona">Seleziona il tuo sesso:</span><br>
+				<span class ="uomo">M</span><input type = "radio" name = "sesso" required class = "radiom"><br>
+				<span class = "donna">F</span><input type = "radio" name = "sesso" required class = "radiof"><br>
+				<span class = "titolomotivo">Seleziona il motivo per il quale mi stai contattando:</span>
+				<select required = "required" class = "select">
+				
+					<option value = "">Seleziona</option>
+					<option value = "infoprogramma">Dubbi su un programma</option>
+					<option value = "infouda">Informazioni sull'UDA</option>
+					<option value = "inopersonali">Informazioni personali</option>
+					<option value = "altro">Altro</option>
+				
+				</select><br>
 				<textarea class = "testo" required placeholder = "Scrivi quello che mi vuoi dire..."></textarea><br>
 				
+				<span class = "testocheckbox">Accetto di non scrivere cose offensive e di essere serio* </span><input type = "checkbox" name = "accetto" required class = "checkbox"><br>
 				<input type = "submit" value = "Invia" class = "invia">
 				<input type = "reset" value = "Azzera i Campi" class = "reset">
+				<button class = "bottone-sopra"><a href = #sopra>Torna all'inizio del form</a></button>
 				
 			</form>
 			
